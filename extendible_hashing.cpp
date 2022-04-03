@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 #define GLOBAL_DEPTH 20
-#define inf 1000000
+#define inf 2147483647
 using namespace std;
 
 //Declaring global variables.
@@ -152,23 +152,24 @@ void display_status(vector<vector<int>* >& directory,list<vector<int> >& buckets
     cout<<global_depth<<endl;
     cout<<buckets.size()<<endl;
     int i,j;
-    /*list<vector<int> >::iterator it=buckets.begin();
+    list<vector<int> >::iterator it=buckets.begin();
     for(i=0;i<buckets.size();i++){
-        for(j=0;j<(*it).size();j++){
+        /*for(j=0;j<(*it).size();j++){
             cout<<(*it)[j]<<" ";
         }
         it++;
         cout<<endl;
-        //cout<<bucket_size(*it)<<" "<<(*it)[0]<<endl;
-        //it++;
-    }*/
-    cout<<directory.size()<<endl;
+        */
+        cout<<bucket_size(*it)<<" "<<(*it)[0]<<endl;
+        it++;
+    }
+    /*cout<<directory.size()<<endl;
     for(i=0;i<directory.size();i++){
         for(j=0;j<(*directory[i]).size();j++){
             cout<<(*directory[i])[j]<<" ";
         }
         cout<<endl;
-    }
+    }*/
 }
 int main()
 {
